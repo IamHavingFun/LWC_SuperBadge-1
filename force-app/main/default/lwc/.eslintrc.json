@@ -4,7 +4,8 @@
     {
       "files": ["*.test.js"],
       "rules": {
-        "@lwc/lwc/no-unexpected-wire-adapter-usages": "off"
+        "@lwc/lwc/no-unexpected-wire-adapter-usages": "off",
+        "@lwc/lwc/@lwc/lwc/no-api-reassignments": "off"
       }
     }
   ]

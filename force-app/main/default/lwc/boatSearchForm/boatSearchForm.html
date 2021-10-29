@@ -1,0 +1,20 @@
+<!--
+ - Created by bjohnson on 10/28/2021.
+ -->
+
+<!-- Boat Search Form -->
+<template>
+  <lightning-layout>
+    <lightning-layout-item class="slds-align-middle">
+      Boat Search Form
+      <lightning-combobox
+        class="slds-align-middle"
+        name="test"
+        value={selectedBoatTypeId}
+        options={searchOptions}
+        onchange={handleSearchOptionChange}
+      >
+      </lightning-combobox>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

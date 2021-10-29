@@ -178,13 +178,14 @@ public class GenerateData {
     };
     
     public static void init() {
-        deleteOldData();
+        //deleteOldData();
         generateNewData();        
     }
     
     private static void deleteOldData() {
         DELETE [SELECT id FROM Opportunity];
         DELETE [SELECT id FROM Case];
+        DELETE [SELECT id FROM Entitlement];
         DELETE [SELECT id FROM Account];
         DELETE [SELECT id FROM Contact];
         DELETE [SELECT id FROM Boat__c];
