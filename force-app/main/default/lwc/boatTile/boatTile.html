@@ -1,0 +1,22 @@
+<!--
+ - Created by bjohnson on 10/29/2021.
+ -->
+
+<!-- Boat Tile -->
+<template>
+    Hello Boat TIle
+    <div onclick={selectBoat} class={tileClass}>
+        <div style={backgroundStyle} class="tile"></div>
+        <div class="lower-third">
+
+            <!-- Boat information goes here -->
+           <!-- <h1 class="slds-truncate boatName ">{boat.Name}</h1>
+            <h2 class="slds-truncate contactName ">{boat.Contact__r.Name}</h2>-->
+            <div class="slds-text-body_small boatPrice">
+                Price: <lightning-formatted-number value={boat.Price__c} maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+            <div class="slds-text-body_small boatLength">Length: {boat.Length__c}</div>
+           <!-- <div class="slds-text-body_small boatType">Type: {boat.BoatType__r.Name}</div>-->
+        </div>
+    </div>
+</template>
